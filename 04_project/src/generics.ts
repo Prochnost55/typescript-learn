@@ -20,3 +20,36 @@ function three<Type>(val: Type): Type{
 }
 
 three(3);
+
+// this is a clasical generic funtion
+function genericFunction <Type,> (arg: Type[]): Type {
+    let idx = 2;
+    return arg[idx];
+}
+
+// this is a classical arrow function
+const genericArrowFunction = <T,>(arg: T[]): T => {
+    // note that , is placed after T. This is perfectly fine and is used to just infrom the fellow developers that it is not JSX
+    let idx = 2;
+    return arg[idx];
+}
+
+
+// class generics
+interface Pen {
+    name: string
+    cost: number
+}
+
+interface Copy {
+    type: string
+    cost: number
+}
+
+class Sellable<T>{
+    public cart: T[] = [];
+
+    addToCart(product: T){
+        this.cart.push(product);
+    }
+}
