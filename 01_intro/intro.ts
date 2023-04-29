@@ -7,5 +7,5 @@ let user = {
 // this will work fine
 console.log(user.name); // Abhishek
 
-// if we pring user.email the IDE will not show any issue but we will be getting undefined.
+// if we print user.email the IDE will show us error.
 console.log(user.email);
