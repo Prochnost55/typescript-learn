@@ -1,2 +1,3 @@
 *.js
 .gitconfig
+.DS_Store
