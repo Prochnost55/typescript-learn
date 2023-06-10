@@ -3,7 +3,7 @@
 // first let see how we can pass an object into a funtion and return an object from the function
 
 function createUser ({name: string, isPaid: boolean}){
-    // in this function we are expecting and object which will be having name and isPaid 
+    // in this function we are expecting an object which will be having name and isPaid 
 }
 // if I want to return and object from a funtion then i can simply add
 function createCourse ({name: string, price: number}):{}{
@@ -24,8 +24,8 @@ function createCourse ({name: string, price: number}):{}{
 createUser({name: "abhishek", isPaid: false}); // this is allowed
 // createUser({name: "abhishek", isPaid: false, email: "some@email.com"}); // this is not allowed
 // but
-let user = {name: "abhishek", isPaid: false, email: "some@email.com"}
-createUser(user); // this is allowed
+let userA = {name: "abhishek", isPaid: false, email: "some@email.com"}
+createUser(userA); // this is allowed
 
 // this is the weird behaviour
 // you can pass user as and object having few extra properties which are not declared intially. But if you pass it as part of method call then you are not allowed to do so.

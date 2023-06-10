@@ -6,7 +6,10 @@ interface User {
     applyCoupon(couponCode: string): number // 2nd way
 }
 
-// interface is loose form of class
+// In typescript interface is loose form of class.
+// Interface in general describes the expected behaviors(methods). 
+// lets say if a interface has hello method and a class implements that interface then the class should have hello method in it.
+// In JAVA we can only define behaviours(methods) in interface. But in TS we can define the properties also.
 
 const abhishek: User = {
     name: "abhishek", 
