@@ -1,3 +1,4 @@
 *.js
 .gitconfig
 .DS_Store
+node_modules
